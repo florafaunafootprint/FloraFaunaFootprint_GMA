@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meditation Garden</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff9115;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info b {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #ffb347;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #fff3e0;
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #555;
+            }
+
+            table td:nth-child(1)::before { content: "Species"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Plant Type"; }
+            table td:nth-child(4)::before { content: "Habitat Type"; }
+            table td:nth-child(5)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MEDITATION GARDEN</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 38</p>
+        <p><b>Rarest Species:</b> [Insert rarest species]</p>
+        <p><b>Habitat Type:</b> Open area</p>
+        <p><b>Plant Types:</b> Shrubs, trees, potted plants</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SPECIES</th>
+                <th>SCIENTIFIC NAME</th>
+                <th>PLANT TYPE</th>
+                <th>HABITAT TYPE</th>
+                <th>COMMONLY FOUND AREAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Pepper</td><td>Capsicum annuum</td><td>Cultivated annual herb</td><td>Cultivated fields and gardens</td><td>Widely cultivated across tropical and temperate regions, especially in the Americas, Asia, and southern Europe.</td></tr><tr><td>Beet</td><td>Beta vulgaris</td><td>Biannual root vegetable</td><td>Cultivated land and agricultural fields</td><td>Commonly grown in Europe, the United States, and parts of India.</td></tr><tr><td>Common purslane</td><td>Portulaca oleracea</td><td>Succulent annual herb</td><td>Disturbed sites</td><td>Found globally in disturbed soils, gardens, roadsides, and open fields.</td></tr><tr><td>Bermuda grass</td><td>Cynodon dactylon</td><td>Perennial grass</td><td>Grasslands</td><td>Tough, low-growing grass common in lawns, sports fields, parks, and roadsides throughout tropical and subtropical regions.</td></tr><tr><td>Dill</td><td>Anethum graveolens</td><td>Annual aromatic herb</td><td>Semi-wild herb fields</td><td>Grown extensively in kitchen gardens and farms across Europe, North Africa, and India.</td></tr><tr><td>Jimsonweed</td><td>Datura stramonium</td><td>Annual herbaceous plant</td><td>disturbed soils</td><td>Grows wildly in waste areas, roadsides, and disturbed fields around the world although it is originally from Central America.</td></tr><tr><td>Garlic</td><td>Allium sativum</td><td>Bulbous perennial herb</td><td>Cultivated farmlands</td><td>Cultivated globally, especially in China, India, and Mediterranean countries.</td></tr><tr><td>Russian olive</td><td>Elaeagnus angustifolia</td><td>Small deciduous tree</td><td>Riverbanks</td><td>Found in dry plains,riverbanks, and roadsides, especially in Central Asia and parts of North America where it is often used as a windbreak tree.</td></tr><tr><td>Neem tree</td><td>Azadirachta indica</td><td>Tall evergreen tree</td><td>Tropical and semi-arid forests</td><td>Native to the Indian subcontinent and widely grown in tropical and semi-arid regions across Asia and Africa.</td></tr><tr><td>Chinaberry tree</td><td>Melia azedarac</td><td>Fast-growing deciduous tree</td><td>Open woodlands</td><td>Native to Asia and northern Australia but is now naturalized in many parts of the world, including the southern United States.</td></tr><tr><td>Aloe vera</td><td>Aloe barbadensis Mill</td><td>Succulent plant with medicinal uses</td><td>Hot, arid or semi-arid climates,</td><td>Originates from the Arabian Peninsula but is now cultivated globally in arid and semi-arid regions.</td></tr><tr><td>Black nightshade</td><td>Solanum nigrum</td><td>Herbaceous plant known for its small black berries</td><td>Disturbed habitats</td><td>Found across Asia, Europe, and Africa, commonly growing as a weed in disturbed soils, fields, gardens, and roadsides.</td></tr><tr><td>Jujube</td><td>Ziziphus jujuba</td><td>Small deciduous tree bearing edible fruit known as jujube</td><td>Dry deciduous forests</td><td>Native to China but widely grown in arid and semi-arid regions of Asia and the Mediterranean.</td></tr><tr><td>Common sowthistle</td><td>Sonchus oleraceus</td><td>Fast-growing annual plant</td><td>Disturbed areas</td><td>Native to Europe and Asia but now naturalized worldwide.</td></tr><tr><td>Annual rabbitsfoot grass</td><td>Polypogon monspeliensis</td><td>Soft annual grass often found in moist areas</td><td>Wetlands and riverbanks</td><td>Native to southern Europe and parts of Asia but found in moist habitats worldwide.</td></tr><tr><td>Hooked bristlegrass</td><td>Setaria verticillata</td><td>Annual grass with bristly seed heads</td><td>Wastelands</td><td>Found in tropical and subtropical regions, especially in disturbed soils.</td></tr><tr><td>Green amaranth</td><td>Amaranthus viridis</td><td>Leafy vegetable and weed in some regions</td><td>Disturbed soils</td><td>Common in tropical and subtropical regions across the globe.</td></tr><tr><td>Kurrajong</td><td>Brachychiton populneus</td><td>Drought-resistant tree with bottle-shaped trunks</td><td>Open grassland</td><td>Native to Australia and is commonly found in dry woodlands and open forests.</td></tr><tr><td>Prickly lettuce</td><td>Lactuca serriola</td><td>Annual or biennial plant</td><td>Disturbed sites</td><td>Native to Europe and Asia and has spread across temperate regions worldwide.</td></tr><tr><td>Yellow poinciana</td><td>Peltophorum pterocarpum</td><td>Tropical ornamental tree with bright yellow flowers</td><td>Tropical deciduous forests</td><td>Native to tropical Asia and is commonly planted as an ornamental shade tree in urban areas, roadsides, and parks</td></tr><tr><td>Guanacaste</td><td>Enterolobium cyclocarpum</td><td>Large tropical tree known for its ear-shaped seed pods</td><td>Tropical dry forests</td><td>Native to Central America and thrives in tropical lowland forests and savannas.</td></tr><tr><td>Nettle-leaved goosefoot</td><td>Chenopodiastrum murale</td><td>Fast-growing weed in disturbed soils</td><td>Disturbed lands</td><td>Found in temperate and subtropical regions worldwide, particularly in disturbed soils.</td></tr><tr><td>Moringa</td><td>Moringa oleifera</td><td>Fast-growing, drought-resistant tree</td><td>Semi-arid and tropical dry forests</td><td>Native to northwestern India but cultivated across tropical and subtropical regions of Asia, Africa, and Latin America.</td></tr><tr><td>American black nightshade</td><td>Solanum americanum</td><td>Weedy herbaceous plant with small black berries</td><td>Disturbed lands</td><td>Widely distributed across tropical and subtropical regions. It is often found in disturbed areas such as roadsides, fallow fields, and gardens.</td></tr><tr><td>Bitter melon</td><td>Momordica charantia</td><td>Tropical vine</td><td>Tropical lowlands</td><td>Native to tropical Asia but now cultivated and naturalized in tropical and subtropical areas around the world, including India, Southeast Asia, and Africa.</td></tr><tr><td>Butterfly pea</td><td>Clitoria ternatea</td><td>Leguminous vine with striking blue flowers</td><td>Open grasslands</td><td>Found throughout tropical Asia and Africa. It thrives in open grasslands, roadside and forest edges.</td></tr><tr><td>Mesquite</td><td>Prosopis juliflora</td><td>Thorny leguminous plants, commonly found in arid regions</td><td>Arid and semi-arid regions</td><td>Native to South America but is now widely invasive in arid and semi-arid regions of Africa, India, and the Middle East.</td></tr><tr><td>Sea hibiscus</td><td>Hibiscus tiliaceus</td><td>Coastal plant found in tropical regions</td><td>Coastal areas</td><td>Grows in coastal regions across the tropics, including Southeast Asia, the Pacific Islands, and northern Australia.</td></tr><tr><td>Chinese hibiscus</td><td>Hibiscus rosa-sinensis</td><td>Tropical ornamental shrub</td><td>Tropical and subtropical urban areas</td><td>Widely cultivated in tropical and subtropical regions around the world. Though originally native to Asia, its exact origin is uncertain due to widespread cultivation.</td></tr><tr><td>Peacock flower</td><td>Caesalpinia pulcherrima</td><td>Flowering ornamental shrub</td><td>Tropical scrublands</td><td>Native to the tropics of the Americas but widely planted as an ornamental in warm climates worldwide.</td></tr><tr><td>Royal poinciana</td><td>Delonix regia</td><td>Flamboyant flowering tree</td><td>Tropical and subtropical regions</td><td>Native to Madagascar but is now widely grown in tropical and subtropical regions as a popular ornamental shade tree.</td></tr>
+        </tbody>
+    </table>
+
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern 37 - Plant Biodiversity</title>
+    <style>
+        body {
+            background-color: #f4ece5; /* soft beige-brown */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #4b2e1a; /* deep brown text */
+            border: solid #7b4b2a; /* brown border */
+        }
+
+        h1 {
+            text-align: center;
+            color: #4b2e1a;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #7b4b2a;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info b {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #cca88a;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #b88a6d; /* brown header */
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #e6d5c9; /* light brown hover */
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #555;
+            }
+
+            table td:nth-child(1)::before { content: "Species"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Plant Type"; }
+            table td:nth-child(4)::before { content: "Habitat Type"; }
+            table td:nth-child(5)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MODERN 37</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 38</p>
+        <p><b>Rarest Species:</b> [Insert rarest species]</p>
+        <p><b>Habitat Type:</b> Open area</p>
+        <p><b>Plant Types:</b> Shrubs, trees, potted plants</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Species</th>
+                <th>Scientific Name</th>
+                <th>Plant Type</th>
+                <th>Habitat Type</th>
+                <th>Commonly Found Areas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Near the Track</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: white;
+            border: solid white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #1a1a1a; 
+            border: 2px solid #444;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+        }
+
+        .info b {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+        }
+
+        table th, table td {
+            border: 1px solid white;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+            color: white;
+        }
+
+        table th {
+            background-color: #2e2e2e; 
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #343e3a;         }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #555;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #ccc;
+            }
+
+            table td:nth-child(1)::before { content: "Species Name"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Plant Type"; }
+            table td:nth-child(4)::before { content: "Habitat Type"; }
+            table td:nth-child(5)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NEAR THE TRACK</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 38</p>
+        <p><b>Rarest Species:</b> [Insert rarest species]</p>
+        <p><b>Habitat Type:</b> Open area</p>
+        <p><b>Plant Types:</b> Shrubs, trees, potted plants</p>
+    </div>
+
+   <table><tbody><tr><th>SPECIES NAME&nbsp;</th><th>SCIENTIFIC NAME&nbsp;</th><th>PLANT TYPE&nbsp;</th><th>HABITAT TYPE&nbsp;</th><th>COMMONLY FOUND AREAS</th></tr><tr><td>Zoysia</td><td>Zoysia matrella&nbsp;</td><td>Perennial mat-forming grass</td><td>Coastal sand dunes, tropical grasslands, lawns in warm climates.</td><td>Coastal areas of Japan, Philippines, Australia, India; cultivated for lawns in tropical/subtropical regions worldwide.</td></tr><tr><td>Kikuyu Grass</td><td>Cenchrus clandestinus&nbsp;</td><td>Perennial creeping grass</td><td>Tropical and subtropical grasslands, pastures, disturbed soils.</td><td>Australia, New Zealand, South Africa, South America; used for grazing and lawns in warm climates.</td></tr><tr><td>Neem</td><td>Azadirachta indica&nbsp;</td><td>Evergreen tree</td><td>Dry tropical deciduous forests, semi-arid plains, cultivated landscapes.</td><td>India, Bangladesh, Pakistan, Myanmar, Africa (especially dry regions), and parts of Australia.</td></tr><tr><td>Ashwagandha</td><td>Withania somnifera&nbsp;</td><td>Perennial shrub</td><td>Dry subtropical and tropical shrublands, sandy soils, wastelands.</td><td>Dry, subtropical regions of India, Nepal, Pakistan, Sri Lanka.</td></tr><tr><td>Nettle-leaved Goosefoot</td><td>Chenopodiastrum murale&nbsp;</td><td>Annual herbaceous plant</td><td>Disturbed soils, agricultural fields, roadsides in temperate to subtropical areas.</td><td>Europe, North Africa, Asia, Australia, North America; often in disturbed soils and agricultural fields.</td></tr><tr><td>Green amaranth</td><td>Amaranthus viridis</td><td>Annual herbaceous plant</td><td>Cultivated fields, gardens, roadsides, and moist disturbed areas.</td><td>India, Africa, Southeast Asia, Central and South America; found in fields, gardens, and roadsides.</td></tr><tr><td>Common Purselane</td><td>Portulaca oleracea</td><td>Annual succulent herb</td><td>Dry, disturbed soils, gardens, agricultural lands, roadsides.</td><td>Common weed in warm climates across Asia, Europe, Americas, Africa.</td></tr><tr><td>Guinea grass</td><td>Megatyrsus maximus</td><td>Perennial tussock grass</td><td>Tropical and subtropical grasslands, open woodlands, riverbanks.</td><td>Tropics worldwide; cultivated in India, Brazil, Australia for fodder.</td></tr><tr><td>Common Nightshade</td><td>Solanum americanum</td><td>Annual or short-lived perennial herb</td><td>Disturbed sites, cultivated fields, forest clearings, roadsides.</td><td>India, Africa, Australia, Pacific Islands, North and South America; often in disturbed soils and open fields.</td></tr><tr><td>Yellow Flame</td><td>Peltophorum pterocarpum</td><td>Deciduous tree, yellow ornamental flowering tree</td><td>Coastal tropical forests, urban avenues, ornamental landscapes.</td><td>India, Sri Lanka, Caribbean, Africa; grown as an ornamental roadside/shade tree in tropical climates.</td></tr><tr><td>Bermudagrass</td><td>Cynodon dactylon</td><td>Perennial creeping grass</td><td>Grasslands, pastures, riverbanks, disturbed soils in warm climates.</td><td>India, Australia, Southern USA, Mediterranean, Southeast Asia; thrives in warm climates as pasture, lawn, and turf grass.</td></tr><tr><td>Indian Mullberry</td><td>Morus indica&nbsp;</td><td>Deciduous tree</td><td>Subtropical to tropical regions, cultivated orchards, forest margins.</td><td>South Asia, China, Japan, Southeast Asia- cultivated for mulberry leaves and fruits.</td></tr></tbody>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>
