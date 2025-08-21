@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next to the Planter's Patch - Plant Biodiversity</title>
+    <style>
+        body {
+            background-color: #e0d9f8; /* soft periwinkle */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #2b0037;
+            border: solid #6a5acd; /* periwinkle border */
+        }
+
+        h1 {
+            text-align: center;
+            color: #2b0037;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #6a5acd; /* periwinkle */
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info b {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #9b86f8; /* periwinkle header */
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #dcd3fb; /* lighter periwinkle hover */
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #555;
+            }
+
+            table td:nth-child(1)::before { content: "Species"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Plant Type"; }
+            table td:nth-child(4)::before { content: "Habitat Type"; }
+            table td:nth-child(5)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NEXT TO THE PLANTER'S PATCH</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 38</p>
+        <p><b>Rarest Species:</b> [Insert rarest species]</p>
+        <p><b>Habitat Type:</b> Open area</p>
+        <p><b>Plant Types:</b> Shrubs, trees, potted plants</p>
+    </div>
+
+    <table>
+        <tbody><tr><th>Common garden petunia</th><th>Petunia atkinsiana</th><th>Herbaceous plants</th><th>Gardens</th><th>Native to South America,temperate and subtropical regions</th></tr><tr><td>Neem tree</td><td>Azadirachta indica A.Juss.</td><td>evergreen tree</td><td>Warm, humid climates</td><td>tropical and subtropical regions</td></tr><tr><td>Delonix regia</td><td>Delonix regia</td><td>Tropical tree containing fern like leaves</td><td>Wet, tropical areas</td><td>Native to Madagascar, found in tropical and subtropical regions</td></tr><tr><td>Bermuda grass</td><td>Cynodon dactylon</td><td>Perennial grass</td><td>Sandy shores</td><td>Extensively distributed across major regions worldwide. It is native to Africa and has been introduced to various continents including Europe, Asia, and the Americas.</td></tr></tbody></table>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GEMS Modern Academy Map</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+      font-size: 2.2em;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .map-wrapper {
+      background-color: #111;
+      border: 2px solid #444;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      max-width: 90%;
+    }
+
+    .map-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #tooltip {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      pointer-events: none;
+      transition: opacity 0.2s ease-in-out;
+      z-index: 1000;
+    }
+
+    area {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GEMS MODERN ACADEMY</h1>
+
+  <div class="map-container">
+    <div class="map-wrapper">
+      <img src="map.png" usemap="#GMAmap" alt="School Map">
+    </div>
+    <div id="tooltip"></div>
+  </div>
+
+  <map name="GMAmap">
+    <area shape="poly" coords="596,243,585,260,692,316,562,721,575,727,711,312,699,311,709,301,596,243"
+      alt="black" href="black.html"
+      onmouseover="showTooltip(event, 'Black Section')"
+      onmousemove="moveTooltip(event)"
+      onmouseout="hideTooltip()" />
+
+    <area shape="poly" coords="490,514,507,511,514,521,577,521,578,542,492,540,490,514"
+      alt="black" href="black.html" />
+
+    <area shape="poly" coords="463,731,470,726,562,725,573,729,527,856,513,854,463,731"
+      alt="orange" href="orange.html" />
+
+    <area shape="poly" coords="371,559,483,534,488,670,474,675,476,723,463,726,371,559"
+      alt="purple" href="purple.html" />
+
+    <area shape="poly" coords="285,457,305,447,311,458,345,468,339,490,343,487,394,489,395,550,367,560,285,457"
+      alt="green" href="green.html" />
+
+    <area shape="poly" coords="190,301,196,298,207,304,207,314,221,334,227,346,242,355,244,353,267,365,246,406,222,378,225,374,212,365,209,355,187,336,187,327,186,318,191,311,190,301"
+      alt="green" href="green.html" />
+
+    <area shape="poly" coords="258,384,246,408,276,447,294,435,304,447,317,447,320,445,328,450,349,441,351,432,361,415,350,408,343,418,275,389,271,391,258,384"
+      alt="yellow" href="yellow.html" />
+
+    <area shape="poly" coords="369,294,375,285,382,287,390,276,415,294,417,302,430,310,441,308,441,342,443,347,431,347,426,337,427,325,424,321,427,319,428,316,415,309,412,312,407,312,398,307,396,308,369,294"
+      alt="periwinkle" href="periwinkle.html" />
+
+    <area shape="poly" coords="441,318,499,319,499,340,489,348,444,347,441,318"
+      alt="turquoise" href="turquoise.html" />
+
+    <area shape="poly" coords="238,244,271,186,297,219,323,232,308,263,277,247,238,244"
+      alt="brown" href="brown.html" />
+
+    <area shape="poly" coords="295,150,334,118,499,207,498,253,495,260,467,261,456,249,427,249,408,238,416,221,421,219,355,188,342,207,321,196,295,150"
+      alt="blue" href="blue.html" />
+
+    <area shape="poly" coords="297,108,312,115,230,264,231,266,206,304,197,299,218,266,297,108"
+      alt="red" href="red.html" />
+
+    <area shape="poly" coords="117,2,101,28,89,22,64,69,73,77,59,106,83,120,53,147,84,188,90,183,158,218,150,235,178,262,141,279,173,315,296,98,117,2"
+      alt="red" href="red.html" />
+  </map>
+
+  <script>
+    const tooltip = document.getElementById("tooltip");
+
+    function showTooltip(e, text) {
+      tooltip.innerText = text;
+      tooltip.style.display = "block";
+      moveTooltip(e);
+    }
+
+    function moveTooltip(e) {
+      tooltip.style.left = (e.pageX + 15) + "px";
+      tooltip.style.top = (e.pageY + 15) + "px";
+    }
+
+    function hideTooltip() {
+      tooltip.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

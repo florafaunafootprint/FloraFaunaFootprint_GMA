@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Area - Plant Biodiversity</title>
+    <style>
+        body {
+            background-color: #e6f0ff; /* soft pastel blue */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #003366; /* deep blue for text */
+            border: solid #6699ff; /* subtle blue border */
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #221582;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info b {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #221582; 
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #cce0ff;
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #555;
+            }
+
+            table td:nth-child(1)::before { content: "Species"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Plant Type"; }
+            table td:nth-child(4)::before { content: "Habitat Type"; }
+            table td:nth-child(5)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PLAYER AREA</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 38</p>
+        <p><b>Rarest Species:</b> [Insert rarest species]</p>
+        <p><b>Habitat Type:</b> Open area</p>
+        <p><b>Plant Types:</b> Shrubs, trees, potted plants</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SPECIES NAME</th>
+                <th>SCIENTIFIC NAME</th>
+                <th>PLANT TYPE</th>
+                <th>HABITAT TYPE</th>
+                <th>COMMONLY FOUND AREAS</th>
+            </tr>
+        </thead>
+        <tbody>
+	<tr><td>Bermuda grass</td><td>Cynodon dactylon</td><td>Perennial grass</td><td>Sandy shores</td><td>Extensively distributed across major regions worldwide. It is native to Africa and has been introduced to various continents including Europe, Asia, and the Americas.</td></tr><tr><td>Big blue lilyturf</td><td>Liriope muscari</td><td>Perennial or annual herb</td><td>Forests, bamboo forests, scrub, shady, on slopes</td><td>Native to East Asia, where it grows in forests, scrub areas, and along slopes. Also planted in temperate areas as an ornamental and escaped cultivation in the southeastern United States, South Africa, and Belgium, where it is listed as invasive.</td></tr><tr><td>Blue jacaranda</td><td>Jacaranda mimosifolia</td><td>Perennial tree</td><td>Tropical, marine, coastal, terrestrial</td><td>Native to the forests of Bolivia and Argentina, where it is now listed as threatened. It has been introduced sporadically across the globe and is widely cultivated for its ornamental value.</td></tr><tr><td>Carpet-Grass</td><td>Axonopus compressus</td><td>Perennial grass</td><td>Roadsides, Gardens</td><td>Primarily indigenous to tropical regions of the Americas, spanning Central and South America. Outside its native range, carpet-Grass has been introduced and naturalized across various continents, including Africa, Asia, Oceania, and a few places in Europe.</td></tr><tr><td>Chinaberry tree</td><td>Melia azedarach</td><td>Perennial tree</td><td>Nature strip</td><td>Native to South and Southeast Asia including the Himalayan region, cultivated in various locations worldwide. It has been introduced to other continents, often in warmer climates, where it has naturalized in certain areas.</td></tr><tr><td>Common cocklebur</td><td>Xanthium orientale</td><td>Annual weed</td><td>Exposed slopes, wet lands, moist place, irrigation channels</td><td>Indigenous to South America's tropical and subtropical regions. It has spread extensively beyond its native range, and is now found across several continents including Asia, Europe, and parts of Africa.</td></tr><tr><td>Common purslane</td><td>Portulaca oleracea</td><td>Perennial or annual weed</td><td>Fields, waste ground, roadside verges, cultivated ground, seasides</td><td>A wide native range, consisting of most of the African continent, much of the Middle East and some southern European countries. It has been naturalized almost all over the rest of the world.</td></tr><tr><td>Common sunflower</td><td>Helianthus annuus</td><td>Annual herb</td><td>Plains</td><td>Native to the United States and Mexico, where it grows in prairies and open areas. This plant now has a near global distribution due to its popularity in cultivation.</td></tr><tr><td>Dallis grass</td><td>Paspalum dilatatum</td><td>Perennial weed</td><td>Loamy disturbed soils, roadsides, fields, waste places, moist fields or woods</td><td>Originating in South America, it has spread to various regions, often thriving in temperate climates. It is now found in parts of Africa, Asia, Europe, and the Americas, evidencing a broad introduced range.</td></tr><tr><td>Elephant bush</td><td>Portulacaria afra</td><td>Perennial succulent and shrub</td><td>Thicket, Bushveld, Dry river valleys</td><td>Native to the south and east coasts of Africa, where it grows along rocky outcrops and dry slopes. It has been introduced in Sicily. It is widely cultivated as a houseplant and, in frost-free regions that include the US southwest, for outdoor landscaping.</td></tr><tr><td>Glory bower</td><td>Volkameria inermis</td><td>Perennial tree, vine, and shrub (Its evergreen branches can take the form of a bush or a climber.)</td><td>Coasts, edges of mangrove forests, saline marshes, swamps, tidal mud</td><td>Native to tropical regions of South, Southeast Asia, and the Pacific Islands, thriving in areas with warm climates. It has been introduced and naturalized in parts of North Africa and South Asia.</td></tr><tr><td>Green amaranth</td><td>Amaranthus viridis</td><td>Annual weed</td><td>Waste ground, roadsides</td><td>A widespread presence, being native to the tropical regions of the Americas, where it thrives in a variety of environments. Beyond its native range, green amaranth has been introduced to several continents including Africa, Asia, Europe, and Oceania, indicating its adaptability to diverse climates and conditions.</td></tr><tr><td>Kikuyu grass</td><td>Cenchrus clandestinus</td><td>Perennial grass</td><td>In dry and mesic habitats</td><td>Native to parts of Eastern Africa, has a significant presence across multiple continents, including Africa, Asia, the Americas, and Oceania. Non-native to Oceania and select parts of Asia and the Americas.</td></tr><tr><td>Matted Sandmat</td><td>Euphorbia serpens</td><td>Annual weed</td><td>Gardens, yards, orchards, vineyards, crop fields, nursery grounds and containers</td><td>Originally native to tropical Americas, thriving in regions from Central to South America. It has since become an introduced species across various continents including Africa, Asia, and parts of Southern Europe. The plant has established itself in both arid and Mediterranean climates.</td></tr><tr><td>Neem tree</td><td>Azadirachta indica</td><td>Perennial tree</td><td>Mixed forests, evergreen lowland forests</td><td>Widespread cultivation, but primarily native to the Indian subcontinent. It has been introduced to various other regions, flourishing in tropical and subtropical zones across continents. Neem tree is cultivated in areas that mirror its native climate conditions.</td></tr><tr><td>Nut grass</td><td>Cyperus rotundus</td><td>Perennial weed</td><td>Roadsides, sandy fields, cultivated ground, damp places</td><td>Widely dispersed plant with a presence across multiple continents. It is native to various regions, including parts of Asia and Africa, and has been introduced to areas in Europe, North and South America, as well as some islands.</td></tr><tr><td>Pellitory of the wall</td><td>Parietaria judaica</td><td>Perennial weed</td><td>Hedgebanks, cracks in rocks, dry walls</td><td>Native to parts of Eurasia and North Africa, growing on coastal bluffs and in dry or disturbed areas. It has been introduced in scattered spots across North and South America, Australia, and northern Europe.</td></tr><tr><td>Prostrate sandmat</td><td>Euphorbia prostrata</td><td>Annual weed</td><td>Disturbed soils, prairies, pastures, fields, alluvial deposits, roadsides, waste places</td><td>Native to most parts of Eurasia, North Africa and South America. It was introduced to other parts of Eurasia, as well as Africa and Australia.</td></tr><tr><td>Purple amaranth</td><td>Amaranthus blitum</td><td>Annual weed</td><td>Wastelands</td><td>Introduced worldwide, but originated from Eurasia, South America and Africa. It's considered a weed in some countries in Europe and Asia and in Mozambique and Nigeria. Purple amaranth seems to cause the most trouble in Japan, particularly in warm upland farms.</td></tr><tr><td>Shoreline purslane</td><td>Sesuvium portulacastrum</td><td>Perennial herb</td><td>Coastal dunes, beaches</td><td>Its native distribution encompasses continents such as Asia, Africa, North and South America, and island nations in the Pacific and the Caribbean. It has been introduced to parts of Europe and thrives in cultivated settings, expanding beyond its traditional habitats.</td></tr><tr><td>Singapore graveyard flower</td><td>Plumeria obtusa</td><td>Perennial tree</td><td>Occurs along the coast on rocky or sandy, nutrient poor soils.</td><td>Natively found in tropical regions of Central America and the Caribbean. As a testament to its adaptability and ornamental value, it has been introduced to several countries in Southeast Asia, where it is found both in cultivation and occasionally naturalized. This plant flourishes in warm climates across these continents.</td></tr><tr><td>Tropical Signalgrass</td><td>Brachiaria distachya</td><td>Vigorous perennial grass</td><td>Dry deciduous forests, wastelands and mangrove forests</td><td>Globally distributed especially in Africa, India, Sri Lanka and Thailand.</td></tr><tr><td>White-flowered black mangrove</td><td>Lumnitzera racemosa</td><td>Perennial tree</td><td>Shorelines such as mangrove Forests, sandy beaches, and rocky beaches</td><td>Eastern Africa to Southeast Asia (including Singapore), Australia, and the Pacific Islands</td></tr><tr><td>Whitetip nightshade</td><td>Solanum chenopodioides</td><td>Annual or perennial herb</td><td>Dry grasslands, mesic grasslands and open, disturbed places</td><td>Originally South America, now naturalized in Australia, New Zealand, Europe, North America and South Africa. Also, in cultivations, common in areas with human disturbance, between sea level and 1,900 (-2,500) m elevation.</td></tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>
